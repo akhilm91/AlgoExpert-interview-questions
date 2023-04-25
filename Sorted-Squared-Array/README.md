@@ -12,3 +12,8 @@ array =  [1, 2, 3, 5, 6, 8, 9]
 _sample output_
 
 [1, 4, 9, 25, 36, 64, 81]
+
+
+_Optimal complexity_
+
+O(n) time | O(n) space - where n is the length of the input array
