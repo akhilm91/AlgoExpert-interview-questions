@@ -1,4 +1,4 @@
-def spiralTraverse(array):
+def spiralTraverse1(array):
     output = []   
     startRow, endRow, startCol, endCol = 0, len(array)-1, 0, len(array[0])-1
     noOfItems = (len(array))*(len(array[0]))
@@ -38,3 +38,32 @@ def spiralTraverse(array):
         output.append(item)
                 
     return output
+
+
+def spiralTraverse2(array):
+    startRow, endRow = 0, len(array)-1
+    startCol, endCol = 0, len(array[0])-1
+    totalItems = len(array) * len(array[0])
+    result = []
+
+    # while startRow <= endRow and startCol <= endCol:
+    while True:
+        if  len(result) == totalItems:
+            break
+        for col in range(startCol, endCol + 1):
+            result.append(array[startRow][col])
+        
+        for row in range(startRow + 1, endRow + 1):
+            result.append(array[row][endCol])
+            
+        for col in reversed(range(startCol, endCol)):
+            result.append(array[endRow][col])
+        
+        for row in reversed(range(startRow + 1, endRow)):
+            result.append(array[row][startCol])
+
+        startRow, endRow =  startRow + 1, endRow - 1
+        startCol, endCol = startCol + 1, endCol - 1
+        
+    return result
+
