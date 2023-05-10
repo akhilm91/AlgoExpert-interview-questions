@@ -1,6 +1,6 @@
 def nonConstructibleChange(coins):
     coins.sort()
-
+    
     currentChange = 0
     for coin in coins:
         if coin > currentChange + 1:
