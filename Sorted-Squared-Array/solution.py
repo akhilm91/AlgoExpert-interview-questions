@@ -1,5 +1,4 @@
 def sortedSquaredArray1(array):
-    # Write your code here.
     output = []
     left, right = 0, len(array)-1
     while left <= right:

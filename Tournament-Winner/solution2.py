@@ -1,5 +1,4 @@
 def tournamentWinner(competitions, results):
-    # Write your code here.
     winner_map = {}
     for i in range(len(results)):
         winner = 1 - results[i]

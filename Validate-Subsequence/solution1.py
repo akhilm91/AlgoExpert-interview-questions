@@ -1,5 +1,4 @@
 def isValidSubsequence(array, sequence):
-    # Write your code here.
     q = sequence
     pointer = 0
     for i in array:

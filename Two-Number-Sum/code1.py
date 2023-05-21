@@ -1,5 +1,4 @@
 def twoNumberSum(array, targetSum):
-    # Write your code here.
     output = []
     diff_map = {}
     diff = 0

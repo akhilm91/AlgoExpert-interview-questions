@@ -1,5 +1,4 @@
 def tandemBicycle(redShirtSpeeds, blueShirtSpeeds, fastest):
-    # Write your code here.
     output = 0
     redShirtSpeeds.sort()    
     if fastest:

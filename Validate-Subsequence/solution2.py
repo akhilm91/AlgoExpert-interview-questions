@@ -1,5 +1,4 @@
 def isValidSubsequence(array, sequence):
-    # Write your code here.
     if len(sequence) > len(array):
         return False    
     pointer = 0
