@@ -1,7 +1,6 @@
 def tournamentWinner(competitions, results):
     points_map = {}
     for i in range(len(results)):
-        #i = 0, 1, 2
         if competitions[i][1-results[i]] in points_map:
             points_map[competitions[i][1-results[i]]] = points_map[competitions[i][1-results[i]]]+3
         else:
