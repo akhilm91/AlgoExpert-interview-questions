@@ -1,5 +1,4 @@
 def binarySearch(array, target):
-    # Write your code here.
     left, right = 0, len(array)-1
     while left <= right:
         mid = (left+right)//2
