@@ -1,6 +1,5 @@
 def isValidSubsequence(array, sequence):
     q = sequence
-    pointer = 0
     for i in array:
         if q[0] == i:
             q.pop(0)        
