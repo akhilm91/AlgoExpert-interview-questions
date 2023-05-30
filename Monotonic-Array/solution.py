@@ -1,3 +1,4 @@
+#solution 1
 def isMonotonic1(array):
     isIncr, isDecr = False, False
     for ptr in range(1, len(array)):
@@ -9,7 +10,7 @@ def isMonotonic1(array):
             return False
     return True 
 
-
+#solution 2
 def isMonotonic2(array):
     for i in range(1, len(array)):
         incr = True
@@ -26,7 +27,7 @@ def isMonotonic2(array):
                 return False
     return True   
 
-
+#solution 3
 def isMonotonic3(array):
     final = False
     for i in range(1, len(array)):
